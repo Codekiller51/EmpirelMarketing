@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Empirel Marketing | Contact</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/pages.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+</head>
+<body>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+    <div id="loading-screen">
+        <div class="spinner"></div>
+    </div>
+    
+    <header class="fade-in" role="banner">
+        <div class="container">
+            <div class="logo">
+                <img src="logo.png" alt="Empirel Marketing Logo" width="160" height="40">
+                <h1>Empirel Marketing</h1>
+            </div>
+            <button class="hamburger" aria-label="Toggle navigation menu" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <nav class="nav" aria-label="Primary navigation">
+                <ul>
+                    <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+                    <li><a href="about.html"><i class="fas fa-info-circle"></i> About</a></li>
+                    <li><a href="services.html"><i class="fas fa-briefcase"></i> Services</a></li>
+                    <li><a href="gallery.html"><i class="fas fa-images"></i> Gallery</a></li>
+                    <li><a href="contact.html" class="active"><i class="fas fa-envelope"></i> Contact</a></li>
+                    <li><a href="booking.html"><i class="fas fa-calendar-alt"></i> Booking</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div class="overlay"></div>
+    <main>
+        <section class="contact">
+            <h2>Get in Touch</h2>
+            <p>We’d love to hear from you! Fill out the form below or use any of the contact details to reach us.</p>
+            <div class="contact-container">
+                <!-- Contact Form -->
+                <div class="contact-form">
+                    <h3>Contact Form</h3>
+                    <form action="#" method="post">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" placeholder="Your Name" required>
+                        
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" placeholder="Your Email" required>
+                        
+                        <label for="phone">Phone (Optional):</label>
+                        <input type="text" id="phone" name="phone" placeholder="Your Phone Number">
+                        
+                        <label for="message">Message:</label>
+                        <textarea id="message" name="message" placeholder="Your Message" rows="5" required></textarea>
+                        
+                        <button type="submit"><i class="fas fa-paper-plane"></i> Send Message</button>
+                    </form>
+                </div>
+                
+                <!-- Contact Details -->
+                <div class="contact-details">
+                    <h3>Contact Details</h3>
+                    <p><i class="fas fa-envelope"></i> Email: <a href="mailto:info@empirelmarketing.com">info@empirelmarketing.com</a></p>
+                    <p><i class="fas fa-phone"></i> Phone: +1 (555) 123-4567</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Address: 123 Marketing Lane, Business City, BC 56789</p>
+                    <h3>Business Hours</h3>
+                    <p><i class="fas fa-clock"></i> Mon-Fri: 9:00 AM - 6:00 PM</p>
+                    <p><i class="fas fa-clock"></i> Sat: 10:00 AM - 4:00 PM</p>
+                    <p><i class="fas fa-clock"></i> Sun: Closed</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Google Map -->
+        <section class="map">
+            <h3>Find Us on the Map</h3>
+            <div id="google-map"></div>
+        </section>
+
+        <!-- Frequently Asked Questions -->
+        <section class="faq">
+            <h3>Frequently Asked Questions</h3>
+            <div class="faq-item">
+                <h4><i class="fas fa-question-circle"></i> How quickly will you respond to inquiries?</h4>
+                <p>We aim to respond to all inquiries within 24 hours during business days.</p>
+            </div>
+            <div class="faq-item">
+                <h4><i class="fas fa-question-circle"></i> Do you offer consultations?</h4>
+                <p>Yes, we offer free initial consultations to understand your needs and discuss how we can help.</p>
+            </div>
+            <div class="faq-item">
+                <h4><i class="fas fa-question-circle"></i> Where are your services available?</h4>
+                <p>Our services are available globally. We work remotely with clients from all over the world.</p>
+            </div>
+        </section>
+
+        <!-- Social Proof -->
+        <section class="testimonials">
+            <h3>What Our Clients Say</h3>
+            <blockquote>
+                <p>"Empirel Marketing was instrumental in elevating our brand presence. Their professionalism and creativity are top-notch!"</p>
+                <footer>- Sarah Johnson, CEO of Innovate Ltd.</footer>
+            </blockquote>
+            <blockquote>
+                <p>"Their team helped us create a stunning go-to-market strategy that led to a 40% increase in sales!"</p>
+                <footer>- Mark Peterson, Marketing Director</footer>
+            </blockquote>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Empirel Marketing</p>
+        <div class="social-media">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+        </div>
+    </footer>
+
+    <!-- Google Maps Script -->
+    <script>
+        function initMap() {
+            const location = { lat: -34.397, lng: 150.644 };
+            const map = new google.maps.Map(document.getElementById('google-map'), {
+                zoom: 10,
+                center: location,
+            });
+            const marker = new google.maps.Marker({
+                position: location,
+                map: map,
+            });
+        }
+    </script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap"></script>
+</body>
+</html>

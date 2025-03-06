@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Empirel Marketing | Gallery</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/pages.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/masonry/4.2.2/masonry.pkgd.min.js">
+</head>
+<body>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+    <div id="loading-screen">
+        <div class="spinner"></div>
+    </div>
+    
+    <header class="fade-in" role="banner">
+        <div class="container">
+            <div class="logo">
+                <img src="logo.png" alt="Empirel Marketing Logo" width="160" height="40">
+                <h1>Empirel Marketing</h1>
+            </div>
+            <button class="hamburger" aria-label="Toggle navigation menu" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <nav class="nav" aria-label="Primary navigation">
+                <ul>
+                    <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+                    <li><a href="about.html"><i class="fas fa-info-circle"></i> About</a></li>
+                    <li><a href="services.html"><i class="fas fa-briefcase"></i> Services</a></li>
+                    <li><a href="gallery.html" class="active"><i class="fas fa-images"></i> Gallery</a></li>
+                    <li><a href="contact.html"><i class="fas fa-envelope"></i> Contact</a></li>
+                    <li><a href="booking.html"><i class="fas fa-calendar-alt"></i> Booking</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div class="overlay"></div>
+    <main>
+        <!-- Gallery Section -->
+        <section class="gallery-section">
+            <h2>Our Gallery</h2>
+            <p>Browse through our finest collection of photography and graphic design projects.</p>
+            <div class="gallery-grid">
+                <!-- Gallery Item 1 -->
+                <div class="gallery-item" data-id="1">
+                    <img src="images/photo1.jpg" alt="Corporate Event Photography">
+                    <h4>Corporate Event Photography</h4>
+                    <p>High-quality photos from corporate events.</p>
+                </div>
+                <!-- Gallery Item 2 -->
+                <div class="gallery-item" data-id="2">
+                    <img src="images/design1.jpg" alt="Creative Logo Design">
+                    <h4>Creative Logo Design</h4>
+                    <p>Logos that resonate with your brand identity.</p>
+                </div>
+                <!-- Gallery Item 3 -->
+                <div class="gallery-item" data-id="3">
+                    <img src="images/photo2.jpg" alt="Product Photography">
+                    <h4>Product Photography</h4>
+                    <p>Capturing the finest details of your products.</p>
+                </div>
+                <!-- Gallery Item 4 -->
+                <div class="gallery-item" data-id="4">
+                    <img src="images/design2.jpg" alt="Brochure Design">
+                    <h4>Brochure Design</h4>
+                    <p>Visually engaging brochures for marketing.</p>
+                </div>
+                <!-- Gallery Item 5 -->
+                <div class="gallery-item" data-id="5">
+                    <img src="images/photo3.jpg" alt="Event Photography">
+                    <h4>Event Photography</h4>
+                    <p>Memorable moments captured professionally.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- Modal for Gallery Item Details -->
+    <div id="gallery-modal" class="modal hidden">
+        <div class="modal-content">
+            <span id="modal-close" class="close">&times;</span>
+            <img id="modal-image" src="" alt="Gallery Detail">
+            <div class="modal-details">
+                <h3 id="modal-title">Title</h3>
+                <p id="modal-description">Description</p>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2024 Empirel Marketing</p>
+        <div class="social-media">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+        </div>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+</html>

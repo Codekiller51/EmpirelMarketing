@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Empirel Marketing | Professional Services</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+    <div id="loading-screen">
+        <div class="spinner"></div>
+    </div>
+    
+    <header class="fade-in" role="banner">
+        <div class="container">
+            <div class="logo">
+                <img src="logo.png" alt="Empirel Marketing Logo" width="160" height="40">
+                <h1>Empirel Marketing</h1>
+            </div>
+            <button class="hamburger" aria-label="Toggle navigation menu" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <nav class="nav" aria-label="Primary navigation">
+                <ul>
+                    <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+                    <li><a href="about.html"><i class="fas fa-info-circle"></i> About</a></li>
+                    <li><a href="services.html" class="active"><i class="fas fa-briefcase"></i> Services</a></li>
+                    <li><a href="gallery.html"><i class="fas fa-images"></i> Gallery</a></li>
+                    <li><a href="contact.html"><i class="fas fa-envelope"></i> Contact</a></li>
+                    <li><a href="booking.html"><i class="fas fa-calendar-alt"></i> Booking</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div class="overlay"></div>
+
+    <main id="main-content" role="main">
+        <section class="hero fade-in" role="region" aria-label="Services introduction">
+            <div class="hero-background" role="presentation" aria-hidden="true" style="background: linear-gradient(rgba(44, 62, 80, 0.85), rgba(44, 62, 80, 0.85)), url('images/services-bg.jpg') center/cover;"></div>
+            <div class="hero-content">
+                <h2>Our Professional Services</h2>
+                <p>Comprehensive marketing solutions tailored to your business needs</p>
+                <div class="cta-buttons">
+                    <a href="#services" class="button-primary" role="button">
+                        <i class="fas fa-briefcase" aria-hidden="true"></i>
+                        <span>View Services</span>
+                    </a>
+                    <a href="contact.html" class="button-secondary" role="button">
+                        <i class="fas fa-envelope" aria-hidden="true"></i>
+                        <span>Get in Touch</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section id="services" class="services-grid fade-in" role="region" aria-label="Our services">
+            <div class="service-card" id="branding" role="article">
+                <i class="fas fa-bullhorn" aria-hidden="true"></i>
+                <h3>Branding Management</h3>
+                <p>Build and maintain a strong brand identity that resonates with your target audience. Our branding experts help you define your core message and establish a unique market position.</p>
+                <ul class="service-features" aria-label="Branding service features">
+                    <li><i class="fas fa-check" aria-hidden="true"></i> Brand Strategy Development</li>
+                    <li><i class="fas fa-check" aria-hidden="true"></i> Visual Identity Design</li>
+                    <li><i class="fas fa-check" aria-hidden="true"></i> Brand Guidelines</li>
+                    <li><i class="fas fa-check" aria-hidden="true"></i> Brand Voice & Messaging</li>
+                </ul>
+                <a href="booking.html" class="button-primary" role="button">Get Started</a>
+            </div>
+
+            <div class="service-card" id="design" role="article">
+                <i class="fas fa-paint-brush" aria-hidden="true"></i>
+                <h3>Graphics Design</h3>
+                <p>Professional design solutions that communicate your message effectively. From logos to marketing materials, our creative team delivers stunning visuals.</p>
+                <ul class="service-features" aria-label="Design service features">
+                    <li><i class="fas fa-check" aria-hidden="true"></i> Logo Design</li>
+                    <li><i class="fas fa-check" aria-hidden="true"></i> Marketing Collateral</li>
+                    <li><i class="fas fa-check" aria-hidden="true"></i> Social Media Graphics</li>
+                    <li><i class="fas fa-check" aria-hidden="true"></i> Website Design</li>
+                </ul>
+                <a href="booking.html" class="button-primary" role="button">Get Started</a>
+            </div>
+
+            <div class="service-card" id="photography" role="article">
+                <i class="fas fa-camera" aria-hidden="true"></i>
+                <h3>Professional Photography</h3>
+                <p>Capture your brand's essence with high-quality professional photography. We create visual content that engages and inspires.</p>
+                <ul class="service-features" aria-label="Photography service features">
+                    <li><i class="fas fa-check" aria-hidden="true"></i> Product Photography</li>
+                    <li><i class="fas fa-check" aria-hidden="true"></i> Corporate Events</li>
+                    <li><i class="fas fa-check" aria-hidden="true"></i> Team Portraits</li>
+                    <li><i class="fas fa-check" aria-hidden="true"></i> Location Shoots</li>
+                </ul>
+                <a href="booking.html" class="button-primary" role="button">Get Started</a>
+            </div>
+
+            <div class="service-card" id="strategy" role="article">
+                <i class="fas fa-chart-line" aria-hidden="true"></i>
+                <h3>Marketing Strategy</h3>
+                <p>Data-driven marketing strategies that deliver measurable results. We help you reach your target audience and achieve your business goals.</p>
+                <ul class="service-features" aria-label="Strategy service features">
+                    <li><i class="fas fa-check" aria-hidden="true"></i> Market Analysis</li>
+                    <li><i class="fas fa-check" aria-hidden="true"></i> Campaign Planning</li>
+                    <li><i class="fas fa-check" aria-hidden="true"></i> Performance Tracking</li>
+                    <li><i class="fas fa-check" aria-hidden="true"></i> ROI Optimization</li>
+                </ul>
+                <a href="booking.html" class="button-primary" role="button">Get Started</a>
+            </div>
+        </section>
+
+        <section class="pricing-tiers fade-in" role="region" aria-label="Service pricing plans">
+            <div class="tier-container">
+                <div class="tier-card" role="article">
+                    <h3>Basic Package</h3>
+                    <p class="price">$499<span>/month</span></p>
+                    <ul class="tier-features" aria-label="Basic package features">
+                        <li><i class="fas fa-check" aria-hidden="true"></i> Brand Strategy Session</li>
+                        <li><i class="fas fa-check" aria-hidden="true"></i> Social Media Management</li>
+                        <li><i class="fas fa-check" aria-hidden="true"></i> Monthly Performance Report</li>
+                        <li><i class="fas fa-check" aria-hidden="true"></i> Email Support</li>
+                    </ul>
+                    <a href="booking.html" class="button-primary" role="button">Choose Plan</a>
+                </div>
+
+                <div class="tier-card featured" role="article">
+                    <div class="featured-badge" aria-label="Most popular plan">Most Popular</div>
+                    <h3>Professional Package</h3>
+                    <p class="price">$999<span>/month</span></p>
+                    <ul class="tier-features" aria-label="Professional package features">
+                        <li><i class="fas fa-check" aria-hidden="true"></i> Everything in Basic</li>
+                        <li><i class="fas fa-check" aria-hidden="true"></i> Content Creation</li>
+                        <li><i class="fas fa-check" aria-hidden="true"></i> SEO Optimization</li>
+                        <li><i class="fas fa-check" aria-hidden="true"></i> Priority Support</li>
+                    </ul>
+                    <a href="booking.html" class="button-primary" role="button">Choose Plan</a>
+                </div>
+
+                <div class="tier-card" role="article">
+                    <h3>Enterprise Package</h3>
+                    <p class="price">Custom<span>/month</span></p>
+                    <ul class="tier-features" aria-label="Enterprise package features">
+                        <li><i class="fas fa-check" aria-hidden="true"></i> Everything in Professional</li>
+                        <li><i class="fas fa-check" aria-hidden="true"></i> Dedicated Account Manager</li>
+                        <li><i class="fas fa-check" aria-hidden="true"></i> Custom Strategy</li>
+                        <li><i class="fas fa-check" aria-hidden="true"></i> 24/7 Support</li>
+                    </ul>
+                    <a href="contact.html" class="button-primary" role="button">Contact Us</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="cta-section fade-in">
+            <div class="cta-content">
+                <h2>Ready to Transform Your Business?</h2>
+                <p>Let's create a marketing strategy that drives results.</p>
+                <div class="cta-buttons">
+                    <a href="booking.html" class="button-primary" role="button"><i class="fas fa-rocket" aria-hidden="true"></i> Get Started</a>
+                    <a href="contact.html" class="button-secondary" role="button"><i class="fas fa-phone" aria-hidden="true"></i> Schedule a Call</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="fade-in" role="contentinfo">
+        <div class="footer-content">
+            <p>&copy; 2024 Empirel Marketing. All rights reserved.</p>
+            <div class="social-media" aria-label="Social media links">
+                <a href="#" aria-label="Facebook"><i class="fab fa-facebook" aria-hidden="true"></i></a>
+                <a href="#" aria-label="Twitter"><i class="fab fa-twitter" aria-hidden="true"></i></a>
+                <a href="#" aria-label="Instagram"><i class="fab fa-instagram" aria-hidden="true"></i></a>
+                <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin" aria-hidden="true"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

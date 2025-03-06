@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Empirel Marketing | Booking</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/pages.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+</head>
+<body>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+    <div id="loading-screen">
+        <div class="spinner"></div>
+    </div>
+    
+    <header class="fade-in" role="banner">
+        <div class="container">
+            <div class="logo">
+                <img src="logo.png" alt="Empirel Marketing Logo" width="160" height="40">
+                <h1>Empirel Marketing</h1>
+            </div>
+            <button class="hamburger" aria-label="Toggle navigation menu" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <nav class="nav" aria-label="Primary navigation">
+                <ul>
+                    <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+                    <li><a href="about.html"><i class="fas fa-info-circle"></i> About</a></li>
+                    <li><a href="services.html"><i class="fas fa-briefcase"></i> Services</a></li>
+                    <li><a href="gallery.html"><i class="fas fa-images"></i> Gallery</a></li>
+                    <li><a href="contact.html"><i class="fas fa-envelope"></i> Contact</a></li>
+                    <li><a href="booking.html" class="active"><i class="fas fa-calendar-alt"></i> Booking</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div class="overlay"></div>
+    <main>
+        <section class="booking-page">
+            <h2>Book Your Services & Products</h2>
+            <p>Select services/products, pick a time, and proceed to payment.</p>
+
+            <!-- Services List -->
+            <div class="service-list">
+                <h3>Available Services</h3>
+                <div class="service-item">
+                    <img src="images/service1.jpg" alt="Branding Management">
+                    <div class="service-info">
+                        <h4><i class="fas fa-bullhorn"></i> Branding Management</h4>
+                        <p>Price: $500</p>
+                        <button class="add-to-cart" data-name="Branding Management" data-price="500" data-img="images/service1.jpg"><i class="fas fa-cart-plus"></i> Add to Cart</button>
+                    </div>
+                </div>
+                <div class="service-item">
+                    <img src="images/service2.jpg" alt="Graphics Design">
+                    <div class="service-info">
+                        <h4><i class="fas fa-paint-brush"></i> Graphics Design</h4>
+                        <p>Price: $300</p>
+                        <button class="add-to-cart" data-name="Graphics Design" data-price="300" data-img="images/service2.jpg"><i class="fas fa-cart-plus"></i> Add to Cart</button>
+                    </div>
+                </div>
+                <div class="service-item">
+                    <img src="images/service3.jpg" alt="Photography">
+                    <div class="service-info">
+                        <h4><i class="fas fa-camera"></i> Photography</h4>
+                        <p>Price: $400</p>
+                        <button class="add-to-cart" data-name="Photography" data-price="400" data-img="images/service3.jpg"><i class="fas fa-cart-plus"></i> Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Booking Cart -->
+            <div class="booking-cart">
+                <h3>Your Booking</h3>
+                <ul id="cart-items"></ul>
+                <p><strong>Total:</strong> $<span id="total-price">0</span></p>
+            </div>
+
+            <!-- Date and Time Picker -->
+            <div class="date-time-picker">
+                <h3>Choose Date and Time</h3>
+                <label for="booking-date">Select Date:</label>
+                <input type="date" id="booking-date" required>
+                <label for="booking-time">Select Time:</label>
+                <input type="time" id="booking-time" required>
+            </div>
+
+            <!-- Payment Methods -->
+            <div class="payment-methods">
+                <h3>Select Payment Method</h3>
+                <label><input type="radio" name="payment" value="Airtel Money"> Airtel Money</label><br>
+                <label><input type="radio" name="payment" value="Tigo Pesa"> Tigo Pesa</label><br>
+                <label><input type="radio" name="payment" value="M-Pesa"> M-Pesa</label><br>
+                <label><input type="radio" name="payment" value="Halotel Pesa"> Halotel Pesa</label>
+            </div>
+
+            <!-- Confirm Order -->
+            <button id="confirm-order"><i class="fas fa-check"></i> Confirm Order</button>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Empirel Marketing</p>
+        <div class="social-media">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+        </div>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+</html>
