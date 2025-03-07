@@ -214,7 +214,7 @@ class EmpireMarketing {
         window.addEventListener('load', () => {
             loadingScreen.style.opacity = '0';
             setTimeout(() => {
-                loadingScreen.remove();
+                loadingScreen.style.display = 'none';
             }, 500);
         });
 
@@ -223,7 +223,7 @@ class EmpireMarketing {
             if (loadingScreen && loadingScreen.parentElement) {
                 loadingScreen.style.opacity = '0';
                 setTimeout(() => {
-                    loadingScreen.remove();
+                    loadingScreen.style.display = 'none';
                 }, 500);
             }
         }, 3000);

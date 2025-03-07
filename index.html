@@ -42,23 +42,29 @@
     <div class="overlay"></div>
 
     <main id="main-content" role="main">
-        <section class="hero fade-in" role="region" aria-label="Welcome section">
-        <picture>
-            <source srcset="images/hero-bg.webp" type="image/webp">
-            <img src="images/hero-bg.jpg" alt="" role="presentation" aria-hidden="true" class="hero-bg">
-        </picture>
+        <section class="hero fade-in" role="region" aria-labelledby="hero-heading">
+            <picture>
+                <source srcset="img/1.jpg" type="image/webp">
+                <img src="img/1.jpg" alt="" role="presentation" aria-hidden="true" class="hero-bg">
+            </picture>
+            
             <div class="hero-content">
-                <h2>Transform Your Brand's Potential</h2>
+                <h2 id="hero-heading">Transform Your Brand's Potential</h2>
                 <p>Innovative marketing strategies and creative solutions tailored to elevate your business in the digital age.</p>
+                
                 <div class="cta-buttons">
                     <a href="services.html" class="button-primary" role="button">
-            <i class="fas fa-rocket" aria-hidden="true"></i>
-            <span>Explore Services</span>
-        </a>
-                    <a href="contact.html" class="button-secondary"><i class="fas fa-phone-alt"></i> Get in Touch</a>
+                        <i class="fas fa-rocket" aria-hidden="true"></i>
+                        <span>Explore Services</span>
+                    </a>
+                    <a href="contact.html" class="button-secondary">
+                        <i class="fas fa-phone-alt" aria-hidden="true"></i>
+                        <span>Get in Touch</span>
+                    </a>
                 </div>
             </div>
         </section>
+        
 
         <section class="about-section fade-in">
             <h3>Why Choose Empirel Marketing?</h3>
