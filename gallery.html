@@ -5,13 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Empirel Marketing | Gallery</title>
     <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="css/pages.css">
+    <link rel="stylesheet" href="css/gallery.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/masonry/4.2.2/masonry.pkgd.min.js">
 </head>
 <body>
-    <a href="#main-content" class="skip-link">Skip to main content</a>
     <div id="loading-screen">
         <div class="spinner"></div>
     </div>
@@ -34,76 +32,142 @@
                     <li><a href="services.html"><i class="fas fa-briefcase"></i> Services</a></li>
                     <li><a href="gallery.html" class="active"><i class="fas fa-images"></i> Gallery</a></li>
                     <li><a href="contact.html"><i class="fas fa-envelope"></i> Contact</a></li>
-                    <li><a href="booking.html"><i class="fas fa-calendar-alt"></i> Booking</a></li>
                 </ul>
             </nav>
         </div>
     </header>
-    <div class="overlay"></div>
-    <main>
-        <section class="hero fade-in" role="region" aria-label="Gallery introduction" style="background: linear-gradient(rgba(44, 62, 80, 0.85), rgba(44, 62, 80, 0.85)), url('img/1.jpg') center/cover;">
+
+    <main id="main-content" role="main">
+        <section class="hero fade-in" role="region" aria-labelledby="hero-heading">
             <div class="hero-content">
-                <h2>Our Portfolio</h2>
-                <p>Explore our creative works and successful marketing campaigns</p>
+                <h2 id="hero-heading">Our Creative Portfolio</h2>
+                <p>Discover our diverse range of professional services and successful projects</p>
             </div>
         </section>
+
         <section class="gallery-section">
-            <h2>Our Gallery</h2>
-            <p>Browse through our finest collection of photography and graphic design projects.</p>
-            <div class="gallery-grid">
-                <!-- Gallery Item 1 -->
-                <div class="gallery-item" data-id="1">
-                    <img src="images/photo1.jpg" alt="Corporate Event Photography">
-                    <h4>Corporate Event Photography</h4>
-                    <p>High-quality photos from corporate events.</p>
+            <div class="service-gallery">
+                <h3>Photography & Videography</h3>
+                <div class="gallery-grid">
+                    <div class="gallery-item">
+                        <img src="Assets/Gallery/WhatsApp Image 2025-03-11 at 17.51.31.jpeg" alt="Professional Photography">
+                        <div class="gallery-item-content">
+                            <h4>Product Photography</h4>
+                            <p>Professional product shots</p>
+                        </div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="Assets/Gallery/WhatsApp Image 2025-03-11 at 17.52.36.jpeg" alt="Event Photography">
+                        <div class="gallery-item-content">
+                            <h4>Event Coverage</h4>
+                            <p>Capturing special moments</p>
+                        </div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="Assets/Gallery/WhatsApp Image 2025-03-11 at 17.53.30.jpeg" alt="Corporate Photography">
+                        <div class="gallery-item-content">
+                            <h4>Corporate Shoots</h4>
+                            <p>Professional business photography</p>
+                        </div>
+                    </div>
                 </div>
-                <!-- Gallery Item 2 -->
-                <div class="gallery-item" data-id="2">
-                    <img src="images/design1.jpg" alt="Creative Logo Design">
-                    <h4>Creative Logo Design</h4>
-                    <p>Logos that resonate with your brand identity.</p>
+                <a href="galleries/photography.html" class="view-more-btn">View More Photography <i class="fas fa-arrow-right"></i></a>
+            </div>
+
+            <div class="service-gallery">
+                <h3>Graphic Design</h3>
+                <div class="gallery-grid">
+                    <div class="gallery-item">
+                        <img src="Assets/Gallery/WhatsApp Image 2025-03-11 at 18.03.44.jpeg" alt="Brand Design">
+                        <div class="gallery-item-content">
+                            <h4>Brand Identity</h4>
+                            <p>Logo and brand design</p>
+                        </div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="Assets/Gallery/WhatsApp Image 2025-03-11 at 18.04.23.jpeg" alt="Marketing Materials">
+                        <div class="gallery-item-content">
+                            <h4>Marketing Collateral</h4>
+                            <p>Print and digital materials</p>
+                        </div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="Assets/Gallery/WhatsApp Image 2025-03-11 at 18.05.52.jpeg" alt="Social Media Design">
+                        <div class="gallery-item-content">
+                            <h4>Social Media</h4>
+                            <p>Engaging social content</p>
+                        </div>
+                    </div>
                 </div>
-                <!-- Gallery Item 3 -->
-                <div class="gallery-item" data-id="3">
-                    <img src="images/photo2.jpg" alt="Product Photography">
-                    <h4>Product Photography</h4>
-                    <p>Capturing the finest details of your products.</p>
+                <a href="galleries/design.html" class="view-more-btn">View More Designs <i class="fas fa-arrow-right"></i></a>
+            </div>
+
+            <div class="service-gallery">
+                <h3>Event Management</h3>
+                <div class="gallery-grid">
+                    <div class="gallery-item">
+                        <img src="Assets/Gallery/WhatsApp Image 2025-03-11 at 18.07.34.jpeg" alt="Corporate Events">
+                        <div class="gallery-item-content">
+                            <h4>Corporate Events</h4>
+                            <p>Professional business gatherings</p>
+                        </div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="Assets/Gallery/WhatsApp Image 2025-03-11 at 18.09.14.jpeg" alt="Product Launches">
+                        <div class="gallery-item-content">
+                            <h4>Product Launches</h4>
+                            <p>Memorable product presentations</p>
+                        </div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="Assets/Gallery/WhatsApp Image 2025-03-11 at 18.10.12.jpeg" alt="Special Events">
+                        <div class="gallery-item-content">
+                            <h4>Special Events</h4>
+                            <p>Unique event experiences</p>
+                        </div>
+                    </div>
                 </div>
-                <!-- Gallery Item 4 -->
-                <div class="gallery-item" data-id="4">
-                    <img src="images/design2.jpg" alt="Brochure Design">
-                    <h4>Brochure Design</h4>
-                    <p>Visually engaging brochures for marketing.</p>
-                </div>
-                <!-- Gallery Item 5 -->
-                <div class="gallery-item" data-id="5">
-                    <img src="images/photo3.jpg" alt="Event Photography">
-                    <h4>Event Photography</h4>
-                    <p>Memorable moments captured professionally.</p>
-                </div>
+                <a href="galleries/events.html" class="view-more-btn">View More Events <i class="fas fa-arrow-right"></i></a>
             </div>
         </section>
     </main>
-    <!-- Modal for Gallery Item Details -->
-    <div id="gallery-modal" class="modal hidden">
-        <div class="modal-content">
-            <span id="modal-close" class="close">&times;</span>
-            <img id="modal-image" src="" alt="Gallery Detail">
-            <div class="modal-details">
-                <h3 id="modal-title">Title</h3>
-                <p id="modal-description">Description</p>
+
+    <footer class="fade-in">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>About Us</h4>
+                <p>Empirel Marketing is your trusted partner in digital marketing and branding solutions. We help businesses grow through innovative strategies and creative excellence.</p>
+                <div class="social-media">
+                    <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                    <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul class="footer-links">
+                    <li><a href="services.html"><i class="fas fa-angle-right"></i>Our Services</a></li>
+                    <li><a href="about.html"><i class="fas fa-angle-right"></i>About Us</a></li>
+                    <li><a href="gallery.html"><i class="fas fa-angle-right"></i>Gallery</a></li>
+                    <li><a href="contact.html"><i class="fas fa-angle-right"></i>Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Contact Info</h4>
+                <div class="footer-contact">
+                    <p><i class="fas fa-map-marker-alt"></i>123 Business Avenue, City, Country</p>
+                    <p><i class="fas fa-phone"></i>+1 234 567 8900</p>
+                    <p><i class="fas fa-envelope"></i>info@empirelmarketing.com</p>
+                    <p><i class="fas fa-clock"></i>Mon - Fri: 9:00 AM - 6:00 PM</p>
+                </div>
             </div>
         </div>
-    </div>
-    <footer>
-        <p>&copy; 2024 Empirel Marketing</p>
-        <div class="social-media">
-            <a href="#"><i class="fab fa-facebook"></i></a>
-            <a href="#"><i class="fab fa-twitter"></i></a>
-            <a href="#"><i class="fab fa-instagram"></i></a>
-            <a href="#"><i class="fab fa-linkedin"></i></a>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Empirel Marketing. All rights reserved.</p>
         </div>
     </footer>
+
     <script src="js/script.js"></script>
 </body>
 </html>

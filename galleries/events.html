@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Management Gallery | Empirel Marketing</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/pages.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css">
+</head>
+<body>
+    <div id="loading-screen">
+        <div class="spinner"></div>
+    </div>
+    
+    <header class="fade-in" role="banner">
+        <div class="container">
+            <div class="logo">
+                <img src="../logo.png" alt="Empirel Marketing Logo" width="160" height="40">
+                <h1>Empirel Marketing</h1>
+            </div>
+            <button class="hamburger" aria-label="Toggle navigation menu" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <nav class="nav" aria-label="Primary navigation">
+                <ul>
+                    <li><a href="../index.html"><i class="fas fa-home"></i> Home</a></li>
+                    <li><a href="../about.html"><i class="fas fa-info-circle"></i> About</a></li>
+                    <li><a href="../services.html"><i class="fas fa-briefcase"></i> Services</a></li>
+                    <li><a href="../gallery.html" class="active"><i class="fas fa-images"></i> Gallery</a></li>
+                    <li><a href="../contact.html"><i class="fas fa-envelope"></i> Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div class="overlay"></div>
+
+    <main id="main-content" role="main">
+        <section class="hero fade-in" role="region" aria-labelledby="hero-heading" style="background: linear-gradient(rgba(44, 62, 80, 0.85), rgba(44, 62, 80, 0.85)), url('../Assets/Gallery/WhatsApp Image 2025-03-11 at 18.07.34.jpeg') center/cover;">
+            <div class="hero-content">
+                <h2 id="hero-heading">Event Management Portfolio</h2>
+                <p>Creating memorable experiences through flawless event execution</p>
+            </div>
+        </section>
+
+        <section class="gallery-section">
+            <div class="gallery-grid">
+                <div class="gallery-item" data-id="1">
+                    <a href="../Assets/Gallery/WhatsApp Image 2025-03-11 at 18.07.34.jpeg" data-lightbox="events" data-title="Corporate Event Management">
+                        <img src="../Assets/Gallery/WhatsApp Image 2025-03-11 at 18.07.34.jpeg" alt="Corporate Event Management">
+                    </a>
+                    <h4>Corporate Events</h4>
+                    <p>Professional corporate event planning and execution</p>
+                </div>
+
+                <div class="gallery-item" data-id="2">
+                    <a href="../Assets/Gallery/WhatsApp Image 2025-03-11 at 18.07.35.jpeg" data-lightbox="events" data-title="Event Venue Setup">
+                        <img src="../Assets/Gallery/WhatsApp Image 2025-03-11 at 18.07.35.jpeg" alt="Event Venue Setup">
+                    </a>
+                    <h4>Venue Setup</h4>
+                    <p>Creative and professional venue arrangements</p>
+                </div>
+
+                <div class="gallery-item" data-id="3">
+                    <a href="../Assets/Gallery/WhatsApp Image 2025-03-11 at 18.07.36.jpeg" data-lightbox="events" data-title="Event Coordination">
+                        <img src="../Assets/Gallery/WhatsApp Image 2025-03-11 at 18.07.36.jpeg" alt="Event Coordination">
+                    </a>
+                    <h4>Event Coordination</h4>
+                    <p>Seamless event management and coordination</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="fade-in">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>About Us</h4>
+                <p>Empirel Marketing is your trusted partner in digital marketing and branding solutions.</p>
+            </div>
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="../services.html#events">Event Management Services</a></li>
+                    <li><a href="../contact.html">Get a Quote</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Empirel Marketing. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
+    <script src="../js/script.js"></script>
+</body>
+</html>

@@ -62,16 +62,22 @@ class EmpireMarketing {
     }
 
     toggleMobileNav() {
-        if (!this.hamburger || !this.nav || !this.overlay) return;
+        if (!this.hamburger || !this.nav) return;
+        
+        const isActive = !this.hamburger.classList.contains('active');
         
         this.hamburger.classList.toggle('active');
         this.nav.classList.toggle('active');
-        this.overlay.classList.toggle('visible');
-        document.body.style.overflow = this.nav.classList.contains('active') ? 'hidden' : '';
+        
+        if (this.overlay) {
+            this.overlay.classList.toggle('active');
+            this.overlay.style.display = isActive ? 'block' : 'none';
+        }
+        
+        document.body.style.overflow = isActive ? 'hidden' : '';
         
         // Update ARIA attributes
-        const isExpanded = this.hamburger.classList.contains('active');
-        this.hamburger.setAttribute('aria-expanded', isExpanded);
+        this.hamburger.setAttribute('aria-expanded', isActive);
     }
 
     closeMobileNav() {
@@ -79,7 +85,7 @@ class EmpireMarketing {
 
         this.hamburger.classList.remove('active');
         this.nav.classList.remove('active');
-        this.overlay.classList.remove('visible');
+        this.overlay.classList.remove('active');
         document.body.style.overflow = '';
         this.hamburger.setAttribute('aria-expanded', 'false');
     }
@@ -240,3 +246,5 @@ class EmpireMarketing {
 document.addEventListener('DOMContentLoaded', () => {
     new EmpireMarketing();
 });
+
+
